@@ -12,14 +12,14 @@ boot             sda1         Boot
 swap             sda2         Swap
 
 ## home          partition    label    filesystem
-home             sda7         Home     xfs
+home             sda6         Home     xfs
 
 ## root          partition    label    filesystem
 root             sda3         Root     ext3
 
 ## extra         partition    label    filesystem     mount point
-extra            sda5         Temp     reiserfs       /var/tmp
-extra            sda6         Portage  xfs            /usr/portage
+extra            sda4         Temp     reiserfs       /var/tmp
+extra            sda5         Portage  xfs            /usr/portage
 
 ## windows       Windows installed partition (will be added to grub menu)
 # windows          sda1
