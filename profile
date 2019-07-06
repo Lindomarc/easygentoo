@@ -3,7 +3,7 @@
 ## Note: if you want to use a default value, then you don't have to specify it
 
 ## keymap        name (br, trq, trf or us...) - default: us
-keymap           trq
+keymap           br
 
 ## boot          partition    label
 boot             sda1         Boot
@@ -22,10 +22,10 @@ extra            sda5         Temp     reiserfs       /var/tmp
 extra            sda6         Portage  xfs            /usr/portage
 
 ## windows       Windows installed partition (will be added to grub menu)
-windows          sda1
+# windows          sda1
 
 ## arch          desired architecture (i686 or amd64) - default: detected by $(uname -m)
-arch             i686
+arch             $(uname -m)
 
 ## grub          where to install grub (hdc, sdb, sda3...) (none=disabled) - default: root partition
 ## grub          none
@@ -38,22 +38,22 @@ type             laptop
 setup            normal
 
 ## domainname    domainname to use - default: easygentoo
-domainname       venus
+domainname       gentoo
 
 ## hostname      hostname to use - default: freshinstall
-hostname         twister
+hostname         dell-g3
 
 ## rootpass      root password - default: toor
-rootpass         Tbr3Va
+rootpass         toor
 
 ## username      your username - default: owner
 username         lin
 
 ## userpass      your user password - default: resu
-userpass         kv693eRx
+userpass         toor
 
 ## autonet       connection handling (reconnect with found network adapters if needed) - default: yes
 autonet          no
 
 ## blimit        bandwidth limit for installation (KB/s) (will not be active after setup finishes) - default: 0
-blimit           125
+blimit           0
